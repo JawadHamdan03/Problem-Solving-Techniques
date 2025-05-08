@@ -1,0 +1,14 @@
+C:\Users\PC\source\repos\DS_Algos_PS\Problem Solving Techniques\bin\Debug\net9.0\Problem Solving Techniques.exe
+C:\Users\PC\source\repos\DS_Algos_PS\Problem Solving Techniques\bin\Debug\net9.0\Problem Solving Techniques.deps.json
+C:\Users\PC\source\repos\DS_Algos_PS\Problem Solving Techniques\bin\Debug\net9.0\Problem Solving Techniques.runtimeconfig.json
+C:\Users\PC\source\repos\DS_Algos_PS\Problem Solving Techniques\bin\Debug\net9.0\Problem Solving Techniques.dll
+C:\Users\PC\source\repos\DS_Algos_PS\Problem Solving Techniques\bin\Debug\net9.0\Problem Solving Techniques.pdb
+C:\Users\PC\source\repos\DS_Algos_PS\Problem Solving Techniques\obj\Debug\net9.0\Problem Solving Techniques.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\source\repos\DS_Algos_PS\Problem Solving Techniques\obj\Debug\net9.0\Problem Solving Techniques.AssemblyInfoInputs.cache
+C:\Users\PC\source\repos\DS_Algos_PS\Problem Solving Techniques\obj\Debug\net9.0\Problem Solving Techniques.AssemblyInfo.cs
+C:\Users\PC\source\repos\DS_Algos_PS\Problem Solving Techniques\obj\Debug\net9.0\Problem Solving Techniques.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\DS_Algos_PS\Problem Solving Techniques\obj\Debug\net9.0\Problem Solving Techniques.dll
+C:\Users\PC\source\repos\DS_Algos_PS\Problem Solving Techniques\obj\Debug\net9.0\refint\Problem Solving Techniques.dll
+C:\Users\PC\source\repos\DS_Algos_PS\Problem Solving Techniques\obj\Debug\net9.0\Problem Solving Techniques.pdb
+C:\Users\PC\source\repos\DS_Algos_PS\Problem Solving Techniques\obj\Debug\net9.0\Problem Solving Techniques.genruntimeconfig.cache
+C:\Users\PC\source\repos\DS_Algos_PS\Problem Solving Techniques\obj\Debug\net9.0\ref\Problem Solving Techniques.dll

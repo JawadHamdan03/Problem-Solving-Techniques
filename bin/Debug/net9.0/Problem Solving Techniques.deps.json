@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "Problem Solving Techniques/1.0.0": {
+        "runtime": {
+          "Problem Solving Techniques.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Problem Solving Techniques/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
