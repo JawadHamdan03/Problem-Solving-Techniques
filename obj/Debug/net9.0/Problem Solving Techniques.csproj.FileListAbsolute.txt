@@ -12,3 +12,4 @@ C:\Users\PC\source\repos\DS_Algos_PS\Problem Solving Techniques\obj\Debug\net9.0
 C:\Users\PC\source\repos\DS_Algos_PS\Problem Solving Techniques\obj\Debug\net9.0\Problem Solving Techniques.pdb
 C:\Users\PC\source\repos\DS_Algos_PS\Problem Solving Techniques\obj\Debug\net9.0\Problem Solving Techniques.genruntimeconfig.cache
 C:\Users\PC\source\repos\DS_Algos_PS\Problem Solving Techniques\obj\Debug\net9.0\ref\Problem Solving Techniques.dll
+C:\Users\PC\source\repos\DS_Algos_PS\Problem Solving Techniques\obj\Debug\net9.0\Problem Solving Techniques.sourcelink.json
