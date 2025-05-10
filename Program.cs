@@ -4,18 +4,28 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        BruteForce();
-        DivideAndConqur();
+        int[] numbers = { 2, 7, 8, 18, 20, 24, 29, 36, 40, 45, 51, 53, 60, 65, 69, 77, 81, 85, 91, 97 };
+        int target = 65;
+
+        Console.WriteLine("---------------------Brute Force------------------");
+        BruteForce(numbers,target);
+
+        Console.WriteLine("-----------Dvide and Conquer (binary search example => iterative approach)-------------");
+        DivideAndConqurIterative(numbers,target);
+        
+        Console.WriteLine("-----------Dvide and Conquer (binary search example => Recursive approach)-------------");
+        DivideAndConquerRecursive(numbers, target, 0, numbers.Length - 1);
+
+
+
     }
 
-
-    static void BruteForce()
+    static void BruteForce(int[] numbers, int target)
     {
-        Console.WriteLine("---------------------Brute Force------------------");
+       
         // Problem : search for target value in the array 
         // Technique : try all possible solutions => try every thing , used for small inputs 
-        int[] numbers = { 1,3,5,7,9};
-        int target = 5;
+      
 
         foreach(int n in numbers)
         {
@@ -28,17 +38,13 @@ internal class Program
         Console.WriteLine("target not found \n");
     }
 
-    static void DivideAndConqur()
+    static void DivideAndConqurIterative(int[] numbers , int target)
     {
-        Console.WriteLine("-----------Dvide and Conquer (binary search example => iterative approach)-------------");
         // Break into small parts , solve each , then combine
         // Probelm is Binary Search : used when the data is sorted, and for random access(arrays) => log(n)
-        int[] numbers = {2,7,8,18,20,24,29,36,40,45,51,53,60,65,69,77,81,85,91,97 };
-        int target = 65;
 
         int left = 0, right = numbers.Length - 1;
        
-
         while (left <= right)
         {
             int mid = (left + right) / 2;
@@ -57,11 +63,38 @@ internal class Program
                 right = mid - 1;
                 mid = (left + right) / 2;
             }
-            
         }
         Console.WriteLine("Target was not found ");
     }
 
+    static void DivideAndConquerRecursive(int[] source ,int target, int left , int right)
+    {
+        // Break into small parts , solve each , then combine
+        // Probelm is Binary Search : used when the data is sorted, and for random access(arrays) => log(n)
 
+        if (left > right)
+        {
+            Console.WriteLine($"element was not found at index");
+            return;
+        }
+
+        int mid = (left + right) / 2;
+
+            if (source[mid] == target) {
+                Console.WriteLine($"element was found at index {mid}");
+                return;    
+                    }
+            
+
+            if (target < source[mid])
+                DivideAndConquerRecursive(source, target, left, mid - 1);
+
+
+            else if (target > source[mid])
+                DivideAndConquerRecursive(source, target, mid + 1, right);
+        }
+       
+
+    
 
 }
