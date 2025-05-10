@@ -84,11 +84,9 @@ internal class Program
                 Console.WriteLine($"element was found at index {mid}");
                 return;    
                     }
-            
 
             if (target < source[mid])
                 DivideAndConquerRecursive(source, target, left, mid - 1);
-
 
             else if (target > source[mid])
                 DivideAndConquerRecursive(source, target, mid + 1, right);
