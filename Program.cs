@@ -4,7 +4,7 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        int[] numbers = { 2, 7, 8, 18, 20, 24, 29, 36, 40, 45, 51, 53, 60, 65, 69, 77, 81, 85, 91, 97 };
+        int[] numbers = { 17,11,40,18,51,24,29,36,12,45 };
         int target = 65;
 
         Console.WriteLine("---------------------Brute Force------------------");
@@ -17,6 +17,8 @@ internal class Program
         DivideAndConquerRecursive(numbers, target, 0, numbers.Length - 1);
 
 
+        Console.WriteLine("-----------Fixed Sliding Window---------------");
+        FixedSlidingWindow(numbers , 3);
 
     }
 
@@ -92,7 +94,22 @@ internal class Program
                 DivideAndConquerRecursive(source, target, mid + 1, right);
         }
        
+    static void FixedSlidingWindow(int[] source , int windowSize)
+    {
+        // used to search for subsets with a Fixed Sliding Window => O(n) , used for large array 
+        // Problem : finding maximum sum or average of sliding window of 3 elements 
 
+        int maxSum = 0;
+        for (int i = 0; i <= source.Length-windowSize; i++)
+        {
+            int windowSum =source[i]+source[i+1]+source[i+2];
+            maxSum = Math.Max(maxSum, windowSum);
+        }
+
+        Console.WriteLine($"the MaxSum is {maxSum}");
+
+
+    }
     
 
 }
