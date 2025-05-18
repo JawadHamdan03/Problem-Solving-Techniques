@@ -4,7 +4,7 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        int[] numbers = { 17,11,40,18,51,24,29,36,12,45 };
+        int[] numbers = { 2, 7, 8, 18, 20, 24, 29, 36, 40, 45, 51, 53, 60, 65, 69, 77, 81, 85, 91, 97 };
         int target = 65;
 
         Console.WriteLine("---------------------Brute Force------------------");
@@ -20,6 +20,9 @@ internal class Program
         Console.WriteLine("-----------Fixed Sliding Window---------------");
         FixedSlidingWindow(numbers , 3);
 
+
+        Console.WriteLine("----------Dynamic Sliding Window-----------");
+        DynamicSlidingwindow(numbers,150);
     }
 
     static void BruteForce(int[] numbers, int target)
@@ -106,10 +109,31 @@ internal class Program
             maxSum = Math.Max(maxSum, windowSum);
         }
 
-        Console.WriteLine($"the MaxSum is {maxSum}");
+        Console.WriteLine($"the Max sum is {maxSum}");
 
 
     }
     
+    static void DynamicSlidingwindow(int[] source , int sumThreshold)
+    {
+        // Used when the window size is not fixed and dynamicly adjusts based on a condition => O(n)
+        // Used when we want to find the longest ot shortest or optimal subarray based on a constraint 
+        // Problem : find the longest contigues subarray where the sum of elements does not exceed a given threshold 
 
+        int left = 0,  sum = 0, maxLength=0;
+
+        for (int right = left; right < source.Length; right++)
+        {
+            sum += source[right];
+
+            while (sum > sumThreshold)
+            {
+                sum -= source[left];
+                left++;
+            }
+            maxLength= Math.Max(maxLength, right-left+1);
+        }
+        Console.WriteLine($"Longest sub Array under {sumThreshold} : Length ={maxLength} , Sum ={sum} ");
+
+    }
 }
